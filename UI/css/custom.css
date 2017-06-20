@@ -5,7 +5,7 @@ body {
 
 .bucketlist-homepage {
     text-align: center;
-    background-color: blue
+    font-size: large;
 }
 
 .login {
@@ -16,4 +16,5 @@ body {
 
 .btn-signin {
     background-color: gray;
+    color: white;
 }
