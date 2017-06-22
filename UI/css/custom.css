@@ -1,0 +1,20 @@
+body {
+    height: 100%;
+    background-color: #E5E9F2;
+}
+
+.bucketlist-homepage {
+    text-align: center;
+    font-size: large;
+}
+
+.login {
+    margin-top: 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.btn-signin {
+    background-color: gray;
+    color: white;
+}
