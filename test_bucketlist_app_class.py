@@ -8,8 +8,9 @@ class BucketListTest(unittest.TestCase):
         self.app = app.test_client()
 
     def test_login_page_displays(self):
-        response = self.app.get("/")
+        response = self.app.get("/login")
         self.assertIn(b'login', response.data)
+        self.assertEqual('200 OK', response.status)
 
     def test_signup_page_displays(self):
         response = self.app.get("/signup")

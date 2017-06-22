@@ -7,12 +7,13 @@ app.debug = True
 app.secret_key = 'some_secret'
 # prevent user index from being 0
 users = [User('test', 'test', 'test')]
+check = False
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'GET':
         return render_template("sign_in.html")
-    
+
     if request.method == 'POST':
         email = request.form['email']
         password = request.form['password']
@@ -36,9 +37,9 @@ def signup():
         name = request.form['name']
         email = request.form['email']
         password = request.form['password']
-        new_user = User(name, email, password)
         check = user_exists(email)
         if check is False:
+            new_user = User(name, email, password)
             users.append(new_user)
             return redirect(url_for('login'))
         else:
@@ -47,7 +48,7 @@ def signup():
 
 @app.route('/homepage')
 def homepage():
-    return render_template("homepage.html")
+    return render_template("homepage.html", buckets = users[check].bucketlists)
 
 def user_exists(email):
     for existing_user in users:

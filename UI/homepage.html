@@ -44,46 +44,21 @@
         <div class="row" style="margin-bottom:5%;">
             <button type="submit" class="btn btn-default btn-signin">Add</button>
         </div>
+        {% for bucket in buckets %}
         <div class="row">
             <label class="col-md-1 col-md-offset-1">1.</label>
-            <label class="col-md-4">Sky Diving</label>
+            <label class="col-md-4">{{ bucket }}</label>
             <button type="submit" class="btn btn-default btn-signin">Update</button>
             <button type="submit" class="btn btn-default btn-signin">Delete</button>
         </div>
+        {% endfor %}
 
-        <div class="row">
-            <label class="col-md-1 col-md-offset-1">2.</label>
-            <label class="col-md-4">Scuba Diving</label>
-            <button type="submit" class="btn btn-default btn-signin">Update</button>
-            <button type="submit" class="btn btn-default btn-signin">Delete</button>
-        </div>
 
-        <div class="row">
-            <label class="col-md-1 col-md-offset-1">3.</label>
-            <label class="col-md-4">Mountain Climbing</label>
-            <button type="submit" class="btn btn-default btn-signin">Update</button>
-            <button type="submit" class="btn btn-default btn-signin">Delete</button>
-        </div>
 
-        <div class="row">
-            <label class="col-md-1 col-md-offset-1">4.</label>
-            <label class="col-md-4">Owning a Pet Monkey</label>
-            <button type="submit" class="btn btn-default btn-signin">Update</button>
-            <button type="submit" class="btn btn-default btn-signin">Delete</button>
-        </div>
-
-        <div class="row">
-            <label class="col-md-1 col-md-offset-1">5.</label>
-            <label class="col-md-4">Learning a Foreign Language</label>
-            <button type="submit" class="btn btn-default btn-signin">Update</button>
-            <button type="submit" class="btn btn-default btn-signin">Delete</button>
-        </div>
-    </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/static/js/bootstrap.min.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/static/js/bootstrap.min.js"></script>
 </body>
 
 </html>

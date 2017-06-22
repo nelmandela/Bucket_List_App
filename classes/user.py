@@ -3,20 +3,12 @@ class User():
         self.name = name
         self.email = email
         self.password = password
-        self.bucketlists = []
+        #temporary to display bucketlists
+        self.bucketlists = ["Sky Diving", "New Language", "Bungee Jumping"]
         print(self)
-    
+
     def login(self, password):
         if self.password == password:
             return True
         else:
             return False
-    
-    def __eq__(self, other):
-        if self.email == other.email:
-            return True
-        else:
-            return False
-
-    
-
