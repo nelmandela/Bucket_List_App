@@ -18,3 +18,7 @@ body {
     background-color: gray;
     color: white;
 }
+
+.flashes {
+    color: red;
+}
