@@ -1,4 +1,6 @@
 # Bucket List App
+[![Build Status](https://travis-ci.org/nelmandela/Bucket_List_App.svg?branch=master)](https://travis-ci.org/nelmandela/Bucket_List_App)
+
 This application allows users to create a list of activities/goals they would desire to accomplish before kicking the bucket.
 1. This app enables user to register.
 2. It enables users to login
